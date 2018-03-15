@@ -1,0 +1,53 @@
+Package: pivccu
+Priority: extra
+Section: misc
+Maintainer: Alexander Reinert <alex@areinert.de>
+Architecture: all
+Version: 2.31.25-24
+Depends: pivccu-modules-dkms (>= 1.0.10)
+Pre-Depends: lxc, bridge-utils, systemd, debconf (>= 0.5) | debconf-2.0
+Filename: pool/main/p/pivccu/pivccu-2.31.25-24.deb
+Size: 60414814
+MD5sum: 5ff5444d3b257361cebdd93e2323b20b
+SHA1: cd76f56f2f300e18b16039ca4ab75c90069a6267
+SHA256: d48be21b62485351017be056e75c25c867ea50a9076c2fd49ca8196724dcaf72
+SHA512: f474a969d0091d774d301d8ab61fd1501a2aff03e4a96f90dd55de691530808fd2d08e2142d4408011a61a4e178869a7fb591242081828f19945fe3ceb1285b4
+Description: piVCCU - Homematic CCU LXC container
+  This package contains piVCCU - a Homematic CCU LXC container
+Homepage: https://github.com/alexreinert/piVCCU
+
+Package: pivccu-devicetree-armbian
+Priority: extra
+Section: misc
+Maintainer: Alexander Reinert <alex@areinert.de>
+Architecture: all
+Version: 1.0.9
+Provides: pivccu-devicetree
+Filename: pool/main/p/pivccu-devicetree-armbian/pivccu-devicetree-armbian-1.0.9.deb
+Size: 2720
+MD5sum: 4451d1a5567a100eb3c48307c6316ad8
+SHA1: 0e1728fefeacc79e32e904eb67e2bc578f7a4e03
+SHA256: 1a05ba064c0660440419e7735cd823812f053fa0f2baf4bc181c411e57230c7e
+SHA512: 224ab250b451b859cf7bbe2ed8b8f2db6b0a123df097dc066162aec9270e06cc5cef7f02ffa5c04b366c323305ac8d1148d68ac543b0732085e9365453807ecd
+Description: piVCCU DeviceTree files for armbian
+  This package contains piVCCU DeviceTree files for armbian
+Homepage: https://github.com/alexreinert/piVCCU
+
+Package: pivccu-modules-dkms
+Priority: extra
+Section: kernel
+Maintainer: Alexander Reinert <alex@areinert.de>
+Architecture: all
+Version: 1.0.10
+Provides: pivccu-kernel-modules
+Pre-Depends: dkms, build-essential, debconf (>= 0.5) | debconf-2.0
+Filename: pool/main/p/pivccu-modules-dkms/pivccu-modules-dkms-1.0.10.deb
+Size: 19100
+MD5sum: 70e173c36f58cb82d72750fbcb8ed728
+SHA1: e9d043e96b24090647f9d207e6e46005c7c3d7c7
+SHA256: 361cbeb6871abb9a33ee1b2f3841785509ceb06b2f0a787781fc0a5525fc08aa
+SHA512: c9df354043efcccbc090c60708935295af5eb31e98f9522dfcbd2d2cfa2a915b8837fb474a914b24cf87372db0ce62e16a1d2339a71025e3a35b103beb7c0688
+Description: DKMS package for kernel modules needed for Homematic
+  This package contains the a DKMS package for kernel needed for Homematic.
+Homepage: https://github.com/alexreinert/piVCCU
+
